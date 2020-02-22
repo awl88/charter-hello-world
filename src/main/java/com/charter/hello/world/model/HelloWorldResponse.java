@@ -10,7 +10,18 @@ import lombok.Data;
 public class HelloWorldResponse {
     String message;
 
-    public HelloWorldResponse(String message){
+    public HelloWorldResponse(String message) {
+        this.message = message;
+    }
+
+    public HelloWorldResponse() {
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
         this.message = message;
     }
 }
